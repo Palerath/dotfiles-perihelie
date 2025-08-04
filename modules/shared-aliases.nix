@@ -3,9 +3,9 @@
 let
    flakePath = "/home/perihelie/dotfiles";
    aliases = {
-      kumit = "cd /home/perihelie/dotfiles/scripts && ./commit-perikon.sh && cd ..";
-      rebuild = "nh os switch ${flakePath} #perikon";
-      hms = "nh home switch ${flakePath}";
+      kumit = "cd ${flakePath}/scripts && bash ./commit-perikon.sh && cd ..";
+      rebuild = "nh os switch ${flakePath} '.?submodules=1#perikon'";
+      hms = "nh home switch '.?submodules=1'";
 
       # Git aliases
       g = "git";
