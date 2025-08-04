@@ -4,10 +4,11 @@ let
    flakePath = "/home/perihelie/dotfiles";
    aliases = {
       kumit = ''
-         kumit() {
-         cd ${flakePath}/scripts && bash ./commit-perikon.sh "$*" && cd ..
-         }
-         kumit "$@"
+          f() {
+    local msg="$*"
+    cd ${flakePath}/scripts && bash ./commit-perikon.sh "$msg" && cd ..
+  }
+  f
       '';
       rebuild = "nh os switch '.?submodules=1' --hostname perikon";
       hms = "nh home switch '.?submodules=1'";
