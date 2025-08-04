@@ -3,7 +3,8 @@
 let
    flakePath = "/home/perihelie/dotfiles";
    aliases = {
-      rebuild = "nh os switch ${flakePath}";
+      kumit = "cd /home/perihelie/dotfiles/scripts && ./commit-perikon.sh && cd ..";
+      rebuild = "nh os switch ${flakePath} #perikon";
       hms = "nh home switch ${flakePath}";
 
       # Git aliases
