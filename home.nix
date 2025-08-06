@@ -28,6 +28,7 @@
       krita
       audacious
       protonvpn-gui
+      sqlite
    ];
 
    programs.git = {
