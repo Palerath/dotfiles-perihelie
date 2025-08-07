@@ -29,6 +29,8 @@
       audacious
       protonvpn-gui
       sqlite
+      dbeaver-bin
+      cider
    ];
 
    programs.git = {
