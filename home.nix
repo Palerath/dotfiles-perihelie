@@ -30,7 +30,7 @@
       protonvpn-gui
       sqlite
       dbeaver-bin
-      cider
+      cider-2
    ];
 
    programs.git = {
