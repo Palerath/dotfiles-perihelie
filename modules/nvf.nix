@@ -140,7 +140,6 @@
                mode = "n";
                action = "<CMD>Oil %:p:h<CR>";
             }
-            # Additional keymaps for better workflow
             {
                key = "<leader>ff";
                mode = "n"; 
@@ -160,6 +159,11 @@
                key = "<leader>fh";
                mode = "n";
                action = "<CMD>Telescope help_tags<CR>";
+            }
+            {
+               key = "<leader>fn";
+               mode = "n";
+               action = ":e %:p:h/";
             }
             # Quick file navigation
             {
