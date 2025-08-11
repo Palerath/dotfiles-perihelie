@@ -22,10 +22,10 @@
    };
 
    home.activation.doom = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-  if [ -x "${config.xdg.configHome}/emacs/bin/doom" ]; then
-    echo "Running doom sync..."
-      ${config.xdg.configHome}/emacs/bin/doom sync
-  fi
+      if [ -x "${config.xdg.configHome}/emacs/bin/doom" ]; then
+         echo "Running doom sync..."
+         ${config.xdg.configHome}/emacs/bin/doom sync
+      fi
    '';
 
    fonts.fontconfig.enable = true;

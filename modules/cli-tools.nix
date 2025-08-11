@@ -21,6 +21,7 @@
       kitty-img
       libsixel
       dconf
+      ripgrep
       ripgrep-all
       fd
       bat
