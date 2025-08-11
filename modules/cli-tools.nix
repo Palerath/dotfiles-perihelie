@@ -13,7 +13,7 @@
       glances
       slurp
       # lf
-      # tmux
+      tmux
       zellij
       ffmpeg
       ffmpegthumbnailer
@@ -40,13 +40,14 @@
       # presenterm
       oh-my-posh 
       sqlite
-      ripgrep           
       fd                 
       fzf          
       glow         # Terminal markdown viewer
       pandoc       # Document converter
       eza
       unixtools.netstat
+      prettierd
+      nixfmt-rfc-style
    ];
 
    dconf = {

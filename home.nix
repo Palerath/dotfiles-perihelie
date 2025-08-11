@@ -61,6 +61,7 @@
       ./modules/desktop-entries.nix
       ./modules/cli-tools.nix
       # ./modules/perilization.nix
+      ./modules/emacs.nix
       inputs.zen-browser.homeModules.beta
    ];
 
