@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{config, pkgs, lib, ...}:
 {
    home.packages = with pkgs; [
       emacs-all-the-icons-fonts
@@ -20,4 +20,13 @@
    programs.emacs = {
       enable = true;
    };
+
+   home.activation.doom = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+  if [ -x "${config.xdg.configHome}/emacs/bin/doom" ]; then
+    echo "Running doom sync..."
+      ${config.xdg.configHome}/emacs/bin/doom sync
+  fi
+   '';
+
+   fonts.fontconfig.enable = true;
 }

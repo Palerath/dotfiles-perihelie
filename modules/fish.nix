@@ -9,6 +9,7 @@ in
       fishPlugins.tide          # Modern Fish prompt (similar to agnoster)
       fishPlugins.fzf-fish      # Enhanced completions
       fishPlugins.autopair      # Auto-close brackets/quotes
+      fishPlugins.bass          # Allows to run bash scripts
    ];
 
    programs.fish = {
