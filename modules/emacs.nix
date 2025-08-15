@@ -2,7 +2,6 @@
 {
    home.packages = with pkgs; [
       emacs-all-the-icons-fonts
-      (nerdfonts.override { fonts = [ "FiraCode" ]; })
 
       #LSPs
       nil
