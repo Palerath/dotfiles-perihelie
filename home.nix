@@ -30,6 +30,8 @@
       protonvpn-gui
       sqlite
       dbeaver-bin
+      ladybird
+      vivaldi
    ];
 
    programs.git = {
